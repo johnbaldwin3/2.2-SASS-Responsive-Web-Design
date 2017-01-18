@@ -21,6 +21,7 @@ $banner-border: 10px solid white;
 $img-border: 5px solid white;
 $font-chunk: 'Raleway', sans-serif;
 $text-shadower: 1px 1px 1px black;
+$input-shadower: inset 2px 2px 1px rgba(128, 128, 128, 0.38);
 
 /*****************************************
 Common Styling
@@ -29,6 +30,15 @@ Common Styling
   background-image: url("../images/bg.jpg");
   background-size:cover;
   background-repeat: no-repeat;
+
+  .wrapper::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background: rgba(0,0,0, 0.3);
+  }
 }
 
 img {
@@ -70,13 +80,18 @@ img {
 }
 
 .three-box {
-  background-color: $white;
-  box-shadow: $boxer-shadow;
-  padding: 10px;
+  background-color: #fff;
+position: relative;
+height: 350px;
+box-shadow: 1px 4px 0px #ccc;
+padding-top: 7px;
+padding-left: 28px;
+padding-right: 29px;
   h2 {
     color: $box-h2-color;
     font-size: 24px;
     text-align: left;
+    text-transform: capitalize;
   }
   time {
    color: $date-color;
@@ -87,9 +102,17 @@ img {
     color: $box-p-color;
     font-size: 10px;
   }
-  span {
+  a {
     color: $read-red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .span-red-read {
     text-align: center;
+    position: relative;
+    bottom: 0;
   }
 }
 
@@ -111,7 +134,7 @@ img {
   text-transform: uppercase;
   color: $white;
   text-align: center;
-  margin: 33% auto;
+  margin: 81px auto;
   // position: absolute;
   // width: 100%;
   // top: 33.3%;
@@ -122,14 +145,25 @@ img {
 .sk81 {
   background-image: url("../images/sk8er-1.png");
   background-position: 1px -95px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .sk83 {
   background-image: url("../images/sk8er-3.png");
-  background-position: 1px -11px;
+  // background-position: 1px -11px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 .sk84 {
   background-image: url("../images/sk8er-4.png");
-  background-position: -146px -12px;
+  // background-position: -146px -12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
 }
 .col-img {
   border: $img-border;
@@ -145,5 +179,60 @@ img {
   @extend .col-img;
   height: 476px;
   background-image: url("../images/sk8er-2.png");
-  background-position: -424px 1px;
+  // background-position: -424px 1px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 992px ) {
+    background-position: -424px 1px;
+  }
+
+  h1 {
+  margin: 192px auto;
+  }
+}
+
+.boards {
+  border: $img-border;
+  box-shadow: $boxer-shadow;
+  background-color: $white;
+  margin-top: 30px;
+  text-align: center;
+  img {
+    margin: 9px 13px;
+  }
+}
+
+.contacter {
+  font-family: 'Arial', sans-serif;
+  color: #777;
+  margin: 17px 5px 0px 39px;
+  font-size: 20px;
+  p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+}
+
+.inputer {
+  margin: 25px;
+}
+
+.submit-forms {
+  background-color: $white;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  box-shadow: $boxer-shadow;
+}
+.text-sub {
+  color: #c6c6c6;
+  box-shadow: $input-shadower;
+  text-transform: uppercase;
+  border-radius: none;
+}
+
+.input-box {
+  @extend .text-sub;
+  color: #c6c6c6;
 }
