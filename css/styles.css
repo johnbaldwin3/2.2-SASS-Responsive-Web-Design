@@ -5914,6 +5914,9 @@ img {
   background-position: 1px -95px;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (min-width: 990px) {
+    .sk81 {
+      background-position: 0 -60px; } }
 
 .sk83 {
   background-image: url("../images/sk8er-3.png");
