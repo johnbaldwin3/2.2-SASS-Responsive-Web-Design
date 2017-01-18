@@ -1,3 +1,17 @@
+/*****************************************
+Variables
+*****************************************/
+$white: #fff;
+$date-color: #A2A2A2;
+$read-red: #B02836;
+$box-p-color: #5F5F5F;
+$boxer-shadow: 1px 4px 0px #ccc;
+$box-h2-color: #3A3B36;
+
+
+/*****************************************
+Common Styling
+*****************************************/
 .wrapper {
   background-image: url("../images/bg.jpg");
   background-size:cover;
@@ -7,6 +21,59 @@
 img {
   max-width: 100%;
 }
+
 .top-image {
   width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  position: relative;
+  z-index: 28;
+  border: 9px solid white;
+  box-shadow: $boxer-shadow;
+}
+
+.overlayimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 29;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.navbar {
+  button {
+  width: 95%;
+  margin:0 auto;
+  }
+}
+
+.three-box {
+  background-color: $white;
+  box-shadow: $boxer-shadow;
+  
+  h2 {
+    color: $box-h2-color;
+    font-size: 24px;
+    text-align: left;
+  }
+  time {
+   color: $date-color;
+   font-size: 12px;
+  }
+
+  p {
+    color: $box-p-color;
+    font-size: 10px;
+  }
+  span {
+    color: $read-red;
+  }
 }
