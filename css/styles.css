@@ -5827,11 +5827,13 @@ img {
   max-width: 100%; }
 
 .top-image {
-  max-height: 360px;
+  height: 360px;
+  background-image: url(../images/top-image.png);
+  background-position: -265px -160px;
   overflow: hidden;
   position: relative;
   z-index: 28;
-  border: 9px solid white;
+  border: 10px solid white;
   box-shadow: 1px 4px 0px #ccc; }
 
 .overlayimg {
@@ -5879,10 +5881,37 @@ img {
     width: 20px;
     height: 20px; }
 
-.col-img2 img {
-  width: 100%; }
+.skaters {
+  margin-top: 30px; }
+  .skaters h1 {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin: 33% auto;
+    text-shadow: 1px 1px 1px black; }
+
+.sk81 {
+  background-image: url("../images/sk8er-1.png");
+  background-position: 1px -95px; }
+
+.sk83 {
+  background-image: url("../images/sk8er-3.png");
+  background-position: 1px -11px; }
+
+.sk84 {
+  background-image: url("../images/sk8er-4.png");
+  background-position: -146px -12px; }
+
+.col-img, .col-img2, .tall-img {
+  border: 5px solid white;
+  margin-top: 10px;
+  box-shadow: 1px 4px 0px #ccc;
+  height: 233px; }
 
 .tall-img {
-  height: 300px; }
+  height: 476px;
+  background-image: url("../images/sk8er-2.png");
+  background-position: -424px 1px; }
 
 /*# sourceMappingURL=styles.css.map */
