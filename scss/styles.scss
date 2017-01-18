@@ -1,4 +1,14 @@
 /*****************************************
+gutter declaration
+*****************************************/
+$grid-gutter-width: 10px;
+
+/*****************************************
+Integrate bootstrap bower etc.
+*****************************************/
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*****************************************
 Variables
 *****************************************/
 $white: #fff;
@@ -23,7 +33,6 @@ img {
 }
 
 .top-image {
-  width: 100%;
   max-height: 360px;
   overflow: hidden;
   position: relative;
@@ -43,22 +52,22 @@ img {
 
 .logo-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 54px;
+  left: 24px;
   z-index: 30;
 }
 
 .navbar {
   button {
   width: 95%;
-  margin:0 auto;
+  // margin:0 auto;
   }
 }
 
 .three-box {
   background-color: $white;
   box-shadow: $boxer-shadow;
-  
+  padding: 10px;
   h2 {
     color: $box-h2-color;
     font-size: 24px;
@@ -75,5 +84,28 @@ img {
   }
   span {
     color: $read-red;
+    text-align: center;
   }
+}
+
+.slider-buttons {
+  display: inline-block;
+  margin: 20px auto;
+    button {
+      border-radius: 50%;
+      box-shadow: $boxer-shadow;
+      background-color: white;
+      width: 20px;
+      height: 20px;
+    }
+}
+
+.col-img2 {
+  img {
+    width: 100%;
+  }
+}
+
+.tall-img {
+  height: 300px;
 }
