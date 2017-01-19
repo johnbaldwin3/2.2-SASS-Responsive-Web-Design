@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>2.2 Sass Responsive Web Design</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="wrapper">
-      <div class="overlay-wrap">
       <div class="container">
 
           <div class="row">
@@ -17,11 +17,12 @@
             <div class="topbar">
           <div class="col-md-1 col-md-offset-7">
 
-              <a class="subscribe" href="#">Subscribe</a>
+              <a class="subscribe" href="#">Subscribe  &#9702;</a>
             </div>
             <div class="col-md-offset 1 social-links col-md-4">
+              <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
               <a href=""> <div class="button-face butter "><i class="fa fa-facebook fa-2x" aria-hidden="true"></i> </div> </a>
-              <a href=""> <div class="button-wifi butter "><i class="fa fa-wifi fa-2x" aria-hidden="true"></i></div></a>
+              <a href=""> <div class="button-wifi butter "><i class="fa fa fa-rss fa-2x" aria-hidden="true"></i></div></a>
               <a href="" > <div class="button-twit butter "><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a>
               <a href=""> <div class="button-you butter "><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></div></a>
             </div>
@@ -31,16 +32,16 @@
         <div class="row">
           <div class="navbar">
             <div class="col-md-3">
-              <a href=""><button type="button" class="navbutton button btn-danger" >- SK8T NEWS -</button></a>
+              <a href=""><button type="button" class="navbutton button" ><span class="em-dash">&mdash;</span> SK8T NEWS <span class="em-dash-end">&mdash;</span></button></a>
             </div>
             <div class="col-md-3">
-              <a href=""><button type="button" class="navbutton button btn-danger">- SKATEBOARDERS -</button></a>
+              <a href=""><button type="button" class="navbutton button"><span class="em-dash">&mdash;</span> SKATEBOARDERS <span class="em-dash-end">&mdash;</span></button></a>
             </div>
             <div class="col-md-3">
-              <a href=""><button type="button" class="navbutton button btn-danger">- BOARD DESIGN -</button></a>
+              <a href=""><button type="button" class="navbutton button"><span class="em-dash">&mdash;</span> BOARD DESIGN <span class="em-dash-end">&mdash;</span></button></a>
             </div>
             <div class="col-md-3">
-              <a href=""><button type="button" class="navbutton button btn-danger">- CONTACT US -</button></a>
+              <a href=""><button type="button" class="navbutton button"><span class="em-dash">&mdash;</span> CONTACT US <span class="em-dash-end">&mdash;</span></button></a>
             </div>
           </div> <!-- nabar div ends-->
       </div> <!--row - navbar ends-->
@@ -99,7 +100,9 @@
             </div>
           </div> <!--three box col dec. ends-->
         </div> <!--third row stuff end-->
+
         <div class="row skaters">
+          <img src="images/skateboard-arrow.png" alt="" class="arrower">
           <div class="col-md-8">
             <div class="row">
               <div class="col-md-6">
@@ -151,7 +154,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                   <a href=""> <div class="button-face1 butter "><i class="fa fa-facebook fa-2x" aria-hidden="true"></i> </div>
                    </a>
-                  <a href=""> <div class="button-wifi1 butter "><i class="fa fa-wifi fa-2x" aria-hidden="true"></i></div></a>
+                  <a href=""> <div class="button-wifi1 butter "><i class="fa fa-rss fa-2x" aria-hidden="true"></i></div></a>
                   <a href="" > <div class="button-twit1 butter "><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></div></a>
                   <a href=""> <div class="button-you1 butter "><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></div></a>
                 </div>
@@ -175,7 +178,7 @@
                     </div>
                   </div>
                   <div class="sub-button">
-                      <button type="submit" class="btn btn-default">SUMBIT</button>
+                      <button type="submit" class="button">SUBMIT</button>
                     </div>
                 </form>
             </div>
@@ -183,7 +186,6 @@
           </div>
         </div> <!--submit form div end-->
       </div> <!--container div end -->
-    </div><!--overlay wrapper-->
     </div> <!--wrapper div end -->
   </body>
 </html>
