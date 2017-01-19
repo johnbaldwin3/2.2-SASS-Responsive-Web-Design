@@ -1,6 +1,7 @@
 /*****************************************
 gutter declaration
 *****************************************/
+
 $grid-gutter-width: 10px;
 
 /*****************************************
@@ -22,6 +23,11 @@ $img-border: 5px solid white;
 $font-chunk: 'Raleway', sans-serif;
 $text-shadower: 1px 1px 1px black;
 $input-shadower: inset 2px 2px 1px rgba(128, 128, 128, 0.38);
+$button-color: #A63634;
+$face-color: #475893;
+$wifi-color: #C49245;
+$twit-color: #708DC2;
+$you-color: #A64134;
 
 /*****************************************
 Common Styling
@@ -40,27 +46,56 @@ Common Styling
   z-index: -9;
 }
 
-// .wrapper::before {
-//   content:"";
-//   height: 100%;
-//   width: 100%;
-//   top:0;
-//   left:0;
-//   position: relative;
-//   background: rgba(0,0,0,0.3);
-// }
 
 img {
   max-width: 100%;
 }
 
 .subscribe {
-  
-  a {
-  color: $white;
-  }
+color: $white;
+border-right: 1px dotted white;
+
 }
 
+
+
+.butter {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.5);
+  color: rgba($white, .5);
+  text-align: center;
+  box-shadow: $boxer-shadow;
+  margin-bottom: 10px;
+  // border-left: 3px dotted white;
+  i {
+    margin: 18px auto;
+
+    // position:relative;
+    // top: 0;
+    // left: 0;
+  }
+
+}
+
+.button-face {
+  background-color: $face-color;
+  border-left: 2px dotted white;
+}
+
+.button-wifi {
+  background-color: $wifi-color;
+}
+
+.button-twit {
+  background-color: $twit-color;
+}
+
+.button-you {
+  background-color: $you-color;
+}
 .top-image {
   height: 360px;
   background-image: url(../images/top-image.png);
@@ -90,19 +125,23 @@ img {
 
 .navbar {
   button {
-  width: 95%;
+  width: 98%;
   // margin:0 auto;
   }
 }
 
+.topbar {
+  margin: 2px 0 27px 0px;
+}
+
 .three-box {
   background-color: #fff;
-position: relative;
-height: 350px;
-box-shadow: 1px 4px 0px #ccc;
-padding-top: 7px;
-padding-left: 28px;
-padding-right: 29px;
+  position: relative;
+  height: 350px;
+  box-shadow: 1px 4px 0px #ccc;
+  padding-top: 7px;
+  padding-left: 28px;
+  padding-right: 29px;
   h2 {
     color: $box-h2-color;
     font-size: 24px;
@@ -127,21 +166,29 @@ padding-right: 29px;
 
   .span-red-read {
     text-align: center;
-    position: relative;
+    position: absolute;
     bottom: 0;
   }
 }
 
+// .slider-buttons {
+//   display: inline-block;
+//   margin: 20px auto;
+//     button {
+//       border-radius: 50%;
+//       box-shadow: $boxer-shadow;
+//       background-color: white;
+//       width: 20px;
+//       height: 20px;
+//     }
+// }
+
 .slider-buttons {
-  display: inline-block;
-  margin: 20px auto;
-    button {
-      border-radius: 50%;
-      box-shadow: $boxer-shadow;
-      background-color: white;
-      width: 20px;
-      height: 20px;
-    }
+  margin: 20px;
+  text-align: center;
+  label {
+    margin: 0 10px;
+  }
 }
 .skaters {
   margin-top: 30px;
@@ -255,4 +302,26 @@ padding-right: 29px;
 .input-box {
   @extend .text-sub;
   color: #c6c6c6;
+}
+
+.button-face1 {
+  @extend .button-face;
+  border: none;
+  filter:grayscale(1);
+}
+
+.button-wifi1 {
+  @extend .button-face;
+  border: none;
+  filter:grayscale(1);
+}
+.button-twit1 {
+  @extend .button-face;
+  border: none;
+  filter:grayscale(1);
+}
+.button-you1{
+  @extend .button-face;
+  border: none;
+  filter:grayscale(1);
 }
