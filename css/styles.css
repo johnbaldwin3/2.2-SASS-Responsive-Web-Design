@@ -5836,6 +5836,10 @@ img {
   position: relative;
   top: 28px;
   left: 62px; }
+  @media (max-width: 400px) {
+    .subscribe {
+      top: 37px;
+      left: 20px; } }
 
 .social-links {
   text-align: right; }
@@ -5858,7 +5862,7 @@ img {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   box-shadow: 1px 4px 0px #ccc;
-  margin-bottom: 10px; }
+  margin-bottom: 2px; }
   .butter i {
     margin: 18px auto; }
 
@@ -5883,6 +5887,12 @@ img {
   z-index: 28;
   border: 10px solid white;
   box-shadow: 1px 4px 0px #ccc; }
+  @media (max-width: 400px) {
+    .top-image {
+      background-position: -690px -160px;
+      overflow: hidden;
+      position: relative;
+      z-index: 28; } }
 
 .overlayimg {
   position: absolute;
@@ -5897,8 +5907,12 @@ img {
   top: 54px;
   left: 24px;
   z-index: 30; }
+  @media (max-width: 400px) {
+    .logo-overlay {
+      display: none; } }
 
 .navbar {
+  margin-top: 10px;
   margin-bottom: -2px; }
   .navbar button {
     width: 100%; }
@@ -5906,7 +5920,8 @@ img {
 .navbutton {
   background-color: #b4292e;
   box-shadow: 1px 4px 0px #ccc;
-  color: #fff; }
+  color: #fff;
+  margin-top: 10px; }
   .navbutton button {
     border: none; }
 
@@ -5915,11 +5930,16 @@ img {
 
 .arrower {
   position: absolute;
-  left: -295px;
-  top: -32px; }
+  left: -247px;
+  top: -32px;
+  transform: scale(0.7); }
+  @media (max-width: 1525px) {
+    .arrower {
+      display: none; } }
 
 .three-box {
   background-color: #fff;
+  margin: 10px;
   position: relative;
   height: 350px;
   box-shadow: 1px 4px 0px #ccc;

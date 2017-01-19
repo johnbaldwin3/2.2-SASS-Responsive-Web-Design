@@ -63,9 +63,12 @@ padding-right: 3px;
 position: relative;
 top: 28px;
 left: 62px;
+@media (max-width: 400px ) {
+  top: 37px;
+  left: 20px;
 
 }
-
+}
 .social-links {
   text-align: right;
 }
@@ -90,7 +93,7 @@ left: 62px;
   color: rgba($white, .5);
   text-align: center;
   box-shadow: $boxer-shadow;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   // border-left: 3px dotted white;
   i {
     margin: 18px auto;
@@ -127,6 +130,13 @@ left: 62px;
   z-index: 28;
   border: $banner-border;
   box-shadow: $boxer-shadow;
+
+  @media (max-width: 400px ) {
+    background-position: -690px -160px;
+    overflow: hidden;
+    position: relative;
+    z-index: 28;
+  }
 }
 
 .overlayimg{
@@ -143,9 +153,13 @@ left: 62px;
   top: 54px;
   left: 24px;
   z-index: 30;
+  @media (max-width: 400px ) {
+    display: none;
+  }
 }
 
 .navbar {
+  margin-top: 10px;
   margin-bottom: -2px;
   button {
   width: 100%;
@@ -156,6 +170,7 @@ left: 62px;
   background-color: $button-red;
   box-shadow: $boxer-shadow;
   color: $white;
+  margin-top: 10px;
     button {
       border: none;
     }
@@ -167,12 +182,18 @@ left: 62px;
 
 .arrower {
   position: absolute;
-  left: -295px;
+  left: -247px;
   top: -32px;
+  transform: scale(.7);
+
+    @media (max-width: 1525px) {
+      display: none;
+    }
 }
 
 .three-box {
   background-color: #fff;
+  margin: 10px;
   position: relative;
   height: 350px;
   box-shadow: 1px 4px 0px #ccc;
@@ -308,9 +329,9 @@ left: 62px;
   h1 {
   margin: 192px auto;
 
-  @media (max-width: 991px) {
-    margin: 86px auto;
-  }
+    @media (max-width: 991px) {
+      margin: 86px auto;
+    }
   }
 }
 
