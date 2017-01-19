@@ -215,6 +215,10 @@ border-right: 1px dotted white;
     background-position: 0 -60px;
   }
 
+  // @media (max-width: 654px) and (min-width: 990px){
+  //   background-position: center;
+  // }
+
 }
 .sk83 {
   background-image: url("../images/sk8er-3.png");
@@ -250,12 +254,23 @@ border-right: 1px dotted white;
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 991px) {
+
+        max-height: 233px;
+
+       }
+
   @media (min-width: 992px ) {
     background-position: -424px 1px;
+    // height: 476px;
   }
 
   h1 {
   margin: 192px auto;
+
+  @media (max-width: 991px) {
+    margin: 86px auto;
+  }
   }
 }
 
