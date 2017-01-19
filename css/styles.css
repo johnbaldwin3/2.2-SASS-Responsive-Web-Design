@@ -5821,17 +5821,19 @@ Common Styling
 .wrapper {
   background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
-  .wrapper .wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background: rgba(0, 0, 0, 0.3); }
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -10; }
+
+.overlay-wrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -9; }
 
 img {
   max-width: 100%; }
+
+.subscribe a {
+  color: #fff; }
 
 .top-image {
   height: 360px;
