@@ -5840,6 +5840,9 @@ img {
     .subscribe {
       top: 37px;
       left: 20px; } }
+  @media (max-width: 400px) and (max-width: 1200px) {
+    .subscribe {
+      left: 0; } }
 
 .social-links {
   text-align: right; }
