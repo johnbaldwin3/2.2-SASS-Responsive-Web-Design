@@ -2,10 +2,8 @@
 
 Week 2
 ------
-Website: https://johnbaldwin3.github.io/7.4-Majestic-Thai/
+Website: https://johnbaldwin3.github.io/2.2-SASS-Responsive-Web-Design/
 ------
-Using React, Backbone, JavaScript, Sass, Bootstrap - this assignment was given a mock restaurant, create an e-commerce site that could take orders and update a cart component.
+Using a given wireframe, and design comp, recreate the website with responsive design in mind. This project utilized bower install of Bootstrap and Sass, as well as HTML5.
 
-Using a Backbone router, models, and collections coupled with React.js - Majestic Thai is an on the go e-commerce site ready for business.
-
-![alt tag](https://github.com/johnbaldwin3/7.4-Majestic-Thai/blob/master/skatecomparison.jpg)
+![alt tag](https://github.com/johnbaldwin3/2.2-SASS-Responsive-Web-Design/blob/master/skatecomparison.jpg)
